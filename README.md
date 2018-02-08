@@ -4,10 +4,10 @@ This project is just for data structure & algorithm study with our uirithm membe
 -----------------------------------------------------------------------------
 ## Coding style?
 
-1. <algorithm name>.cpp
-2. if-endif precompiler
+### 1. <algorithm name>.cpp
+### 2. if-endif precompiler
   
-  please add if/endif clause at the top & bottom of the file like below;
+  - please add if/endif clause at the top & bottom of the file like below;
   
   ```
   <stack.cpp>
@@ -22,7 +22,8 @@ This project is just for data structure & algorithm study with our uirithm membe
   
   so we can easily enable/disable to compile it through visual studio IDE.
   
-3. Comment
+### 3. Comment
+
   - please give a lot of comments with korean language so we can easily understand it ! :)
   
 -----------------------------------------------------------------------------
