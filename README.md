@@ -4,7 +4,7 @@ This project is just for data structure & algorithm study with our uirithm membe
 -----------------------------------------------------------------------------
 ## Coding style?
 
-### 1. <algorithm name>.cpp
+### 1. < algorithm name >.cpp
 ### 2. if-endif precompiler
   
   - please add if/endif clause at the top & bottom of the file like below;
