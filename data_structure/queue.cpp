@@ -1,12 +1,10 @@
-#if 1
+#if 0
 #include<iostream>
 using namespace std;
 
 const int Q_SIZE = 10+1;
 struct Queue
 {
-	///////////////////////////////QUEUE/////////////////////////////////
-
 	int queue[Q_SIZE];
 	int front = 0;
 	int rear = 0;
@@ -17,7 +15,6 @@ struct Queue
 	bool isFull() { return (front + 1) % Q_SIZE == rear ? true : false; }
 	bool isEmpty() { return front == rear ? true : false; }
 
-	/////////////////////////////////////////////////////////////////////
 	void show() {
 		int _rear = rear;
 		printf("queue > (rear:%d) ", rear);
