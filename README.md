@@ -20,7 +20,7 @@ This project is for studying data structures & algorithms with the members of Ui
   
   ```
   
-  so that we can easily have it excluded from a build in the Visual Studio IDE. Just change "#if 1" to "#if 0" for this.
+  so that we can easily have (/* your codes */) excluded from a build in the Visual Studio IDE. Just change "#if 1" to "#if 0" for this.
   
 ### 3. Comment
 
