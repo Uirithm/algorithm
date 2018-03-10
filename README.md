@@ -1,5 +1,5 @@
 # Algorithm
-This project is just for data structure & algorithm study with our uirithm members.
+This project is for studying data structures & algorithms with the members of Uirithm.
 
 -----------------------------------------------------------------------------
 ## Coding style?
@@ -7,7 +7,7 @@ This project is just for data structure & algorithm study with our uirithm membe
 ### 1. < algorithm name >.cpp
 ### 2. if-endif precompiler
   
-  - please add if/endif clause at the top & bottom of the file like below;
+  - please add the "#if, #endif" clause at the top & bottom of the file as follows:
   
   ```
   <stack.cpp>
@@ -20,10 +20,10 @@ This project is just for data structure & algorithm study with our uirithm membe
   
   ```
   
-  so we can easily enable/disable to compile it through visual studio IDE.
+  so that we can easily have it excluded from a build in the Visual Studio IDE. Just change "#if 1" to "#if 0" for it.
   
 ### 3. Comment
 
-  - please give a lot of comments with korean language so we can easily understand it ! :)
+  - Any Korean/English comments are welcomed. :)
   
 -----------------------------------------------------------------------------
