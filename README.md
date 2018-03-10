@@ -7,7 +7,7 @@ This project is for studying data structures & algorithms with the members of Ui
 ### 1. < algorithm name >.cpp
 ### 2. if-endif precompiler
   
-  - please add the "#if, #endif" clause at the top & bottom of the file as follows:
+  - Please add the "#if, #endif" clause at the top & bottom of the file as follows:
   
   ```
   <stack.cpp>
