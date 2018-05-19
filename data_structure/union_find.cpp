@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+// https://www.acmicpc.net/problem/1717
+// https://www.acmicpc.net/problem/2606
+
+
 #define MAXN (10)
 
 int parent[MAXN];
