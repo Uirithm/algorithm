@@ -1,11 +1,8 @@
 #include <cstdio>
 
-#define HEAP_MAX 6000
 #define NDATA (5)
 #define MAX_IDT (15)
 #define LEAF_START (MAX_IDT / 2 + 1)
-
-using namespace std;
 
 int data[NDATA] = { 9, 8, 1, 7, 2 };
 int IDT[MAX_IDT + 1];
