@@ -56,8 +56,23 @@ int Search_Word(char *str)
 }
 
 void Delete_All_Node(NODE* node)
-{ for (int i = 0; i < 26; ++i) {  if (node->next[i])  {   Delete_All_Node(node->next[i]);   free(node->next[i]);  } }}
-void init(void) { Delete_All_Node(&root);  for (int i = 0; i < 26; ++i)  root.next[i] = (NODE*)0;}
+{ 
+	for (int i = 0; i < 26; ++i) 
+	{  
+		if (node->next[i])  
+		{   
+			Delete_All_Node(node->next[i]);   
+			free(node->next[i]);  
+		} 
+	}
+}
+
+void init(void) 
+{ 
+	Delete_All_Node(&root);  
+	for (int i = 0; i < 26; ++i)  
+		root.next[i] = (NODE*)0;
+}
 
 /*
 void Delete_All_Node(NODE* node)
