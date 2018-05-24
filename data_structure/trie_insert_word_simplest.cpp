@@ -1,5 +1,5 @@
-#include "stdio.h"
-#include "malloc.h"
+#include <stdio.h>
+#include <malloc.h>
 
 struct NODE
 { 
@@ -21,6 +21,25 @@ void Insert_Word(char *str)
     node = node->next[GETIDX(str[i])];   
   } 
   node->end_of_word = 1;
+}
+
+void Delete_All_Node(NODE* node)
+{ 
+  if (node == (NODE*)0) return;  
+
+  for (int i = 0; i < 26; ++i)  
+    Delete_All_Node(node->next[i]);  
+  
+  free(node);
+}
+
+void Init(void) 
+{ 
+  for (int i = 0; i < 26; ++i)  
+    Delete_All_Node(root.next[i]);  
+  
+  for (int i = 0; i < 26; ++i)  
+    root.next[i] = (NODE*)0;
 }
 
 int main()
