@@ -41,23 +41,6 @@ int tree[1 << 17];
 
 #define MAX(A,B) (((A)>(B)) ? (A) : (B))
 
-void Update(int n, int rs, int re, int idx, int num)
-{
-	int m;
-	if (rs == re)
-	{
-		tree[n] = num;
-		return;
-	}
-
-	m = (rs + re) / 2;
-
-	if (idx <= m) Update(n * 2, rs, m, idx, num);
-	else Update(n * 2 + 1, m + 1, re, idx, num);
-
-	tree[n] = tree[n * 2] + tree[n * 2 + 1];
-}
-
 void Update_Add(int n, int rs, int re, int idx, int num)
 {
 	int m;
@@ -83,7 +66,7 @@ void Input_Data(void)
 	for (i = 1; i <= N; i++)
 	{
 		scanf("%d", &num);
-		Update(1, 1, N, i, num);
+		Update_Add(1, 1, N, i, num);
 	}
 }
 
